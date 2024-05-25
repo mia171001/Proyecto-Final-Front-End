@@ -77,7 +77,7 @@ function CategoryPage() {
                                     <div>
                                         <h5 className="mb-1">{product.title}</h5>
                                         <p className="mb-1">${product.price}</p>
-                                        <p className="mb-1">${product.description}</p>
+                                        {/* <p className="mb-1">${product.description}</p> */}
                                     </div>
                                 </div>
                                 <Button variant="danger" onClick={() => handleAddToCart(product)}>

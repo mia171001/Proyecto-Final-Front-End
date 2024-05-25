@@ -124,6 +124,7 @@
     min-height: 96px;
 }
 
+
 @media (max-width: 767px) {
     .logo{
         display: none;
@@ -155,6 +156,7 @@
         margin-bottom: 50px;
     }
 
+    
 
 }
 

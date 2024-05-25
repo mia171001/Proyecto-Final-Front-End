@@ -70,6 +70,7 @@ function App() {
   return (
     <main>
       <Header onSearchChange={handleSearchChange} />
+      
       <CarouselImg />
       <div className="container">
         <FilterProducts products={displayedProducts} onAddToCart={handleAddToCart} />
