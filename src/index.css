@@ -1,0 +1,156 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel-img {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 170px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    height: 100px;
+}
+
+.logo-copy{
+ display: none;
+}
+
+.nav-container {
+    background-color: rgb(255, 192, 203);
+}
+
+.subTitle {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-right: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 500px;
+}
+
+.search-nav {
+    padding-right: 2.5rem;
+}
+
+.search-nav::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    width: 20px;
+    pointer-events: none;
+}
+
+.img-carr {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 0 25px 10px 0;
+}
+
+.space-row {
+    justify-content: space-around;
+}
+
+.price {
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.category-container{
+    margin-top: 150px;
+    margin-bottom: 70px; 
+}
+
+.container-modal-body {
+    display: flex;
+}
+
+.modal-header {
+    font-size: 40px;
+}
+
+.modal-title {
+    font-size: 50px;
+    margin-left: 25px;
+}
+
+.container-modal-body .title-modal-p {
+    font-size: 20px;
+    margin-left: 15px;
+    text-align: justify;
+}
+
+.container-modal-body .price-modal {
+    font-size: 35px;
+    text-align: end;
+    margin-top: 100px;
+    font-weight: bold;
+}
+
+.btn-carr {
+    background-color: transparent;
+    border: none;
+}
+
+.custom-link .icon {
+    color: black;
+}
+
+@media (max-width: 767px) {
+    .logo{
+        display: none;
+    }
+    .logo-copy{
+        display: flex;
+        width: 30px;
+    }
+    .subTitle {
+        display: none;
+    }
+    .container-search {
+        margin-right: 10px;/* Ajustar el tamaño del contenedor de búsqueda */
+    }
+
+    .navbar .container-fluid{
+        flex-wrap: nowrap !important;
+
+    }
+
+    .carousel-img {
+
+        margin-top: 80px;
+      
+    }
+
+    .category-container{
+        margin-top: 90px;
+        margin-bottom: 50px;
+    }
+
+
+}
+
