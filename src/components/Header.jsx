@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { Link } from 'react-router-dom';
 import { GrRestroomMen } from "react-icons/gr";
 import { GrRestroomWomen } from "react-icons/gr";
 import { IoDiamondOutline } from "react-icons/io5";
@@ -51,18 +52,18 @@ function Header({ onSearchChange }) {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <Nav className="justify-content-end flex-grow-1 pe-3">
-                                <Nav.Link href="/category?name=women's clothing">
+                                <Link to="/category?name=women's clothing" className='nav-link'>
                                     <GrRestroomWomen /> Ropa para mujer
-                                </Nav.Link>
-                                <Nav.Link href="/category?name=men's clothing">
+                                </Link>
+                                <Link to="/category?name=men's clothing" className='nav-link'>
                                     <GrRestroomMen /> Ropa para hombre
-                                </Nav.Link>
-                                <Nav.Link href="/category?name=jewelery">
+                                </Link>
+                                <Link to="/category?name=jewelery" className='nav-link'>
                                     <IoDiamondOutline /> Joyería
-                                </Nav.Link>
-                                <Nav.Link href="/category?name=electronics">
+                                </Link>
+                                <Link to="/category?name=electronics" className='nav-link'>
                                     <MdOutlineLaptopChromebook /> Tecnología
-                                </Nav.Link>
+                                </Link>
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>
