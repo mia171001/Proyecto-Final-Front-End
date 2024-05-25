@@ -71,16 +71,16 @@ function CategoryPage() {
                 ) : (
                     <ListGroup>
                         {filteredProducts.map(product => (
-                            <ListGroup.Item key={product.id} className="d-flex justify-content-between align-items-center">
+                            <ListGroup.Item key={product.id} className="justify-content-between align-items-center">
                                 <div className="d-flex align-items-center">
                                     <img src={product.image} alt={product.title} style={{ width: '120px', height: '130px', marginRight: '15px' }} />
                                     <div>
                                         <h5 className="mb-1">{product.title}</h5>
                                         <p className="mb-1">${product.price}</p>
-                                        {/* <p className="mb-1">${product.description}</p> */}
+                                        <p className="mb-1">${product.description}</p>
                                     </div>
                                 </div>
-                                <Button variant="danger" onClick={() => handleAddToCart(product)}>
+                                <Button variant="danger" onClick={() => handleAddToCart(product)} style={{ marginTop:'15px', marginBottom:'15px' }}>
                                     Agregar
                                 </Button>
                             </ListGroup.Item>
