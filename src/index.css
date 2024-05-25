@@ -120,6 +120,10 @@
     color: black;
 }
 
+.card-title.h5 {
+    min-height: 96px;
+}
+
 @media (max-width: 767px) {
     .logo{
         display: none;
