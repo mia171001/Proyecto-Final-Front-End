@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Routes>
       <Route path="/" element={<App />} /> {/* Usa element en lugar de component */}
       <Route path="/cart" element={<CarrPage />} /> {/* Usa element en lugar de component */}
-      <Route path="/category/:category" element={<CategoryPage />} />
+      <Route path="/category" element={<CategoryPage />} />
     </Routes>
   </BrowserRouter>,
 )

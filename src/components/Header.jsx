@@ -51,16 +51,16 @@ function Header({ onSearchChange }) {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <Nav className="justify-content-end flex-grow-1 pe-3">
-                                <Nav.Link href="/category/women's clothing">
+                                <Nav.Link href="/category?name=women's clothing">
                                     <GrRestroomWomen /> Ropa para mujer
                                 </Nav.Link>
-                                <Nav.Link href="/category/men's clothing">
+                                <Nav.Link href="/category?name=men's clothing">
                                     <GrRestroomMen /> Ropa para hombre
                                 </Nav.Link>
-                                <Nav.Link href="/category/jewelery">
+                                <Nav.Link href="/category?name=jewelery">
                                     <IoDiamondOutline /> Joyería
                                 </Nav.Link>
-                                <Nav.Link href="/category/electronics">
+                                <Nav.Link href="/category?name=electronics">
                                     <MdOutlineLaptopChromebook /> Tecnología
                                 </Nav.Link>
                             </Nav>

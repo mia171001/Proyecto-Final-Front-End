@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link,useLocation } from 'react-router-dom';
 import { Container, ListGroup, Button } from 'react-bootstrap';
 import { FaArrowLeft } from 'react-icons/fa';
 import Header from '../components/Header'; // Asegúrate de que la ruta sea correcta
 import ModalComponent from '../components/ModalComponent';
 
 function CategoryPage() {
-    const { category } = useParams();
+    // const { category } = useParams();
+    const location = useLocation();
+    const searchParams = new URLSearchParams(location.search);
+    const category = searchParams.get('name');
     const [products, setProducts] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
     const [loading, setLoading] = useState(true);
